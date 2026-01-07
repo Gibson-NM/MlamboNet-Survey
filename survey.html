@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MlamboNet Survey</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="survey.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/MLAMBOICON.png">
+</head>
+<body>
+    <img id="logo" src="images/MLAMBOnet.png" alt="MlamboNet Logo">
+    <div class="heading">
+        <!--Heading-->
+        <h2 id="subtitle">Thank you for taking this survey to help improve the platform</h2>
+    </div>
+    <form method="post" action="/submit">
+        <div id="details">
+            <label id="form_text">Name<i>(s)</i>:</label><br><br>
+            <input type="text" name="name" placeholder="Enter your name" class="box"> <br><br>
+            <label id="form_text">Surname:</label><br><br>
+            <input type="text" name="surname" placeholder="Enter your surname" class="box"> <br><br>
+            <label id="form_text">E-mail:</label><br><br>
+            <input type="email" name="email" placeholder="Enter your email address" class="box"> <br><br>
+            <label id="form_text">Cell Number:</label><br><br>
+            <input type="tel" name="tel" placeholder="Enter your cell number" class="box"> <br><br>
+            <label id="form_text">Age <i>(optional)</i>:</label><br><br>
+            <input type="number" name="age" placeholder="Enter your age" class="box"> <br><br>
+
+            <label id="form_text">How long have you been using MlamboNet services?</label><br><br>
+            <input type="radio" name="usageDuration" value="Less than 3 months" class="larger">&nbsp&nbsp&nbspLess than 3 months<br><br>
+            <input type="radio" name="usageDuration" value="3-6 months" class="larger">&nbsp&nbsp&nbsp3-6 months<br><br>
+            <input type="radio" name="usageDuration" value="6-12 months" class="larger">&nbsp&nbsp&nbsp6-12 months<br><br>
+            <input type="radio" name="usageDuration" value="More than 1 year" class="larger">&nbsp&nbsp&nbspMore than 1 year<br><br><br>
+
+            <label id="form_text">What type of customer are you?</label><br><br>
+            <div id="options">
+                <select name="customerType">
+                    <option value="">Select your role</option>
+                    <option value="Individual/home user">Individual/home user</option>
+                    <option value="Small business">Small business</option>
+                    <option value="Medium/Large business">Medium/Large business</option>
+                    <option value="Student">Student</option>
+                </select>
+            </div><br>
+
+            <label id="form_text">How would you rate the network speed?</label><br><br>
+            <input type="radio" name="networkSpeed" value="Excellent" class="larger">&nbsp&nbsp&nbspExcellent<br><br>
+            <input type="radio" name="networkSpeed" value="Good" class="larger">&nbsp&nbsp&nbspGood<br><br>
+            <input type="radio" name="networkSpeed" value="Fair" class="larger">&nbsp&nbsp&nbspFair<br><br>
+            <input type="radio" name="networkSpeed" value="Poor" class="larger">&nbsp&nbsp&nbspPoor<br><br>
+            <input type="radio" name="networkSpeed" value="Very poor" class="larger">&nbsp&nbsp&nbspVery poor<br><br><br>
+
+            <label id="form_text">Have you experienced any challenges while using MlamboNet? Please explain.</label><br><br>
+            <input type="text" name="challenges" placeholder="Answer here..." class="box"> <br><br>
+
+            <label id="form_text">What do you mainly use MlamboNet data for? <i>(Select all that apply)</i></label><br>
+            <div id="checkbox1">
+                <input type="checkbox" name="dataUsage" value="Social media" class="larger"><label>&nbsp&nbsp&nbspSocial media</label><br><br>
+                <input type="checkbox" name="dataUsage" value="Streaming (videos/movies)" class="larger"><label>&nbsp&nbsp&nbspStreaming <i>(videos/movies)</i></label><br><br>
+                <input type="checkbox" name="dataUsage" value="Online learning" class="larger"><label>&nbsp&nbsp&nbspOnline learning</label><br><br>
+                <input type="checkbox" name="dataUsage" value="Work or business" class="larger"><label>&nbsp&nbsp&nbspWork or business</label><br><br>
+                <input type="checkbox" name="dataUsage" value="Gaming" class="larger"><label>&nbsp&nbsp&nbspGaming</label><br><br>
+                <input type="checkbox" name="dataUsage" value="Browsing/News" class="larger"><label>&nbsp&nbsp&nbspBrowsing/News</label><br><br>
+            </div>
+            <br>
+
+            <label id="form_text">How satisfied are you with MlamboNet’s data pricing?</label><br><br>
+            <input type="radio" name="satisfaction" value="Very satisfied" class="larger">&nbsp&nbsp&nbspVery satisfied<br><br>
+            <input type="radio" name="satisfaction" value="Satisfied" class="larger">&nbsp&nbsp&nbspSatisfied<br><br>
+            <input type="radio" name="satisfaction" value="Neutral" class="larger">&nbsp&nbsp&nbspNeutral<br><br>
+            <input type="radio" name="satisfaction" value="Dissatisfied" class="larger">&nbsp&nbsp&nbspDissatisfied<br><br>
+            <input type="radio" name="satisfaction" value="Very dissatisfied" class="larger">&nbsp&nbsp&nbspVery dissatisfied<br><br><br>
+
+            <label id="form_text">How likely are you to recommend MlamboNet to others?</label><br><br>
+            <input type="radio" name="recommendation" value="Very likely" class="larger">&nbsp&nbsp&nbspVery likely<br><br>
+            <input type="radio" name="recommendation" value="Likely" class="larger">&nbsp&nbsp&nbspLikely<br><br>
+            <input type="radio" name="recommendation" value="Neutral" class="larger">&nbsp&nbsp&nbspNeutral<br><br>
+            <input type="radio" name="recommendation" value="Unlikely" class="larger">&nbsp&nbsp&nbspUnlikely<br><br>
+            <input type="radio" name="recommendation" value="Very unlikely" class="larger">&nbsp&nbsp&nbspVery unlikely<br><br><br>
+
+            <label id="form_text">What is your favourite feature of MlamboNet?</label><br><br>
+            <div id="option2">
+                <select name="favoriteFeature">
+                    <option value="">Select an option</option>
+                    <option value="Free Unlimited Data">Free Unlimited Data</option>
+                    <option value="Free Joining Fee">Free Joining Fee</option>
+                    <option value="Best Deals">Best Deals</option>
+                    <option value="Best Network Connection">Best Network Connection</option>
+                </select>
+            </div>
+            <br>
+            <label id="form_text">What improvements would you like MlamboNet to make? <i>(Select all that apply)</i></label><br>
+            <div id="checkbox1">
+                <input type="checkbox" name="improvements" value="Faster internet speeds" class="larger"><label>&nbsp&nbsp&nbspFaster internet speeds</label><br><br>
+                <input type="checkbox" name="improvements" value="Better network coverage" class="larger"><label>&nbsp&nbsp&nbspBetter network coverage</label><br><br>
+                <input type="checkbox" name="improvements" value="Lower data prices" class="larger"><label>&nbsp&nbsp&nbspLower data prices</label><br><br>
+                <input type="checkbox" name="improvements" value="More bundle options" class="larger"><label>&nbsp&nbsp&nbspMore bundle options</label><br><br>
+                <input type="checkbox" name="improvements" value="Better customer service" class="larger"><label>&nbsp&nbsp&nbspBetter customer service</label><br><br><br>
+                <label id="form_text">Any comments or suggestions?</label><br><br>
+                <textarea name="comments" placeholder="Enter your comment here..."></textarea><br><br>
+            </div>
+            <button><h3>Submit</h3></button>
+        </div>
+    </form>
+</body>
+</html>
